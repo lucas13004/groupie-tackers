@@ -1,0 +1,35 @@
+{{define "list-artist"}}
+
+<html>
+
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .box {
+
+    }
+  </style>
+
+  <div class="content">
+    <div class="center">
+	
+      <h1>{{ .title }}</h1>
+
+      {{range .artists}}
+        <div class="box">
+          <p>
+            <a href="artists/{{.ID}}"><img src="{{ .Image }}" height="300" width="300" /></a>
+            <br>
+            <a href="artists/{{.ID}}">{{ .Name }}</a>
+          </p>
+        </div>
+      {{end}}
+  
+    </div>
+  </div>
+</html>
+{{end}}
