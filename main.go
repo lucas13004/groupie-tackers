@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"https://github.com/lucas13004/groupie-tackers/handler"
+	"github.com/lucas13004/groupie-tackers/handler"
 )
 
 func main() {

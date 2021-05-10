@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"strings"
 
-	"https://github.com/lucas13004/groupie-tackers/model"
+	"github.com/lucas13004/groupie-tackers/model"
 )
 
 type ServicesHandler struct {
@@ -25,8 +25,8 @@ func New(tmpl *template.Template) *ServicesHandler {
 	}
 }
 
-var artistsPaternID = regexp.MustCompile(`artists/([0-9]+)`) 
-var artistsPatern = regexp.MustCompile(`artists`)            
+var artistsPaternID = regexp.MustCompile(`artists/([0-9]+)`)
+var artistsPatern = regexp.MustCompile(`artists`)
 
 func (sh *ServicesHandler) Route(w http.ResponseWriter, r *http.Request) {
 	switch {
