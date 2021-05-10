@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/dgkg/project/model"
+	"github.com/lucas13004/groupie-tackers/model"
 )
 
 type ServicesHandler struct {
